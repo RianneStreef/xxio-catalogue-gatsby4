@@ -1,0 +1,146 @@
+.category-title {
+  background-color: rgb(255, 255, 255, 0.8);
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 10px 10px 10px;
+  position: fixed;
+  z-index: 999;
+  max-width: 850px;
+  width: 95%;
+}
+
+.navigation {
+  margin: 20px;
+}
+.category-intro-text {
+  color: #808080;
+}
+
+.product-intro {
+  color: #808080;
+}
+
+.category-info-image {
+  width: 100%;
+}
+
+.product-listing {
+  display: flex;
+}
+
+.product-list-image {
+  width: 25%;
+  height: 25%;
+  margin-right: 10px;
+}
+
+.product-list-title {
+  color: #808080;
+  margin-left: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.new {
+  color: #ff0000;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 18px;
+}
+
+.product-name {
+  margin-top: 0;
+}
+
+.categories-page {
+  padding: 0;
+  margin: 0;
+  transition: background-image 1000ms linear;
+  min-height: 100vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-size: cover;
+  padding: 10px;
+  background-color: #000;
+}
+
+.categories-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-list-link {
+  margin: 5px 0;
+  height: 20vh;
+}
+
+.accessoires-sub {
+  height: 20vh;
+  margin: 10px;
+}
+
+.category-list-title {
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 5px;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.category-list-title:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.category-list-image {
+  max-width: 100%;
+}
+
+.header-logo {
+  margin-bottom: 5px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.save-message {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+}
+
+.copyright {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.add-button img {
+  margin-top: 15px;
+  max-width: 200px;
+  pointer-events: auto;
+}
