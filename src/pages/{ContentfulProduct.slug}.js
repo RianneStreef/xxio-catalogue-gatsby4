@@ -282,7 +282,7 @@ export const productQuery = graphql`
         new
         categorySlug
         colors
-        availableWhen
+
         euro
         euro2
 

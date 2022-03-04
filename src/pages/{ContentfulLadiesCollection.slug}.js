@@ -136,7 +136,7 @@ export const womenCollectionQuery = graphql`
         productName
         slug
         new
-        availableWhen
+
         categorySlug
         productImage {
           file {

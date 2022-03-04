@@ -160,7 +160,7 @@ export const categoryQuery = graphql`
         productName
         slug
         new
-        availableWhen
+
         categorySlug
         productImage {
           file {
