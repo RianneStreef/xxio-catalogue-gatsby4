@@ -46,6 +46,7 @@ module.exports = {
       options: {
         accessToken: process.env.GATSBY_CONTENTFUL_TOKEN,
         spaceId: process.env.GATSBY_CONTENTFUL_ID,
+        useNameForId: false,
       },
     },
     "gatsby-plugin-styled-components",
