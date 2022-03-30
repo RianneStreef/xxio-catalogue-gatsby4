@@ -3,11 +3,11 @@ import Layout from "../components/Layout";
 import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
-  // useEffect(() => {
-  //   setTimeout(function () {
-  //     window.location.href = "./categories";
-  //   }, 1000);
-  // });
+  useEffect(() => {
+    setTimeout(function () {
+      window.location.href = "./categories";
+    }, 1000);
+  });
   return (
     <>
       <Helmet>
