@@ -181,9 +181,9 @@ const ProductPage = (props) => {
             {product.euro && (
               <>
                 {product.price1title == null ? (
-                  <h3>{`${product.productName} price`}</h3>
+                  <h3 className="price-title">{`${product.productName} price`}</h3>
                 ) : (
-                  <h3>{`${product.price1title} price`}</h3>
+                  <h3 className="price-title">{`${product.price1title} price`}</h3>
                 )}
 
                 <p>
