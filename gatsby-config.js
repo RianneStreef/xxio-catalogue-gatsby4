@@ -43,7 +43,7 @@ module.exports = {
     },
     {
       resolve: "gatsby-source-contentful",
-      // not deploying by webhook
+      // not deploying by webhook - still
       options: {
         accessToken: process.env.GATSBY_CONTENTFUL_TOKEN,
         spaceId: process.env.GATSBY_CONTENTFUL_ID,
