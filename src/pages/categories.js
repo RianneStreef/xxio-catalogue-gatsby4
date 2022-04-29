@@ -103,7 +103,7 @@ const CategoriesPage = (props) => {
       </div>
       <div className="download">
         <p className="save-message" id="save-message">
-          <i>Don't forget to save the XXIO EU Catalogue on you home screen</i>
+          <i>Don't forget to save the XXIO EU Catalogue on your home screen</i>
         </p>
 
         <div className="add-button" id="add-button">
