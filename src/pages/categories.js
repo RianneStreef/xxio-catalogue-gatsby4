@@ -111,7 +111,7 @@ const CategoriesPage = (props) => {
         </div>
       </div>
       <p className="copyright">
-        ©️ 2022 Sumitomo Rubber Industries, Ltd. ALL RIGHTS Reserved.
+        ©️ 2023 Sumitomo Rubber Industries, Ltd. ALL RIGHTS Reserved.
       </p>
     </>
   );
