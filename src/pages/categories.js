@@ -110,9 +110,7 @@ const CategoriesPage = (props) => {
           <img src={download} alt="add app to home screen" />
         </div>
       </div>
-      <p className="copyright">
-        ©️ 2023 Sumitomo Rubber Industries, Ltd. ALL RIGHTS Reserved.
-      </p>
+      <p className="copyright">©️ 2023 Dunlop Sports. ALL RIGHTS Reserved.</p>
     </>
   );
 };
