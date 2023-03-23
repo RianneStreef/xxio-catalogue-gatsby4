@@ -12,8 +12,6 @@ import logo from "../images/logo.svg";
 import "../styles/index.css";
 
 const CategoriesPage = (props) => {
-  console.log("categories props");
-  console.log(props);
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (e) => {
       let deferredPrompt;
