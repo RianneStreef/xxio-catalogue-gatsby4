@@ -254,7 +254,7 @@ const ProductPage = (props) => {
                 </>
               )}
             </div>
-            {product.availableWhen && (
+            {!product.euro && (
               <p className="padding">In store in {product.availableWhen}</p>
             )}
           </div>
