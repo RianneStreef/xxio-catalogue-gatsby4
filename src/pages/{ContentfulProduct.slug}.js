@@ -97,73 +97,83 @@ const ProductPage = (props) => {
             </div>
             {product.productUndertitle && <h3>{product.productUndertitle}</h3>}
             {product.productIntro && (
-              <ReactMarkdown className="product-intro">
+              <ReactMarkdown className="product-intro padding">
                 {product.productIntro.productIntro}
               </ReactMarkdown>
             )}
-            {product.techText1 && (
-              <div className="tech-description">
-                <h3>Technology</h3>
-                {product.techImg1 && (
-                  <img
-                    src={product.techImg1.file.url}
-                    className="tech-img"
-                    alt=""
-                  />
-                )}
-                <ReactMarkdown>{product.techText1.techText1}</ReactMarkdown>
-              </div>
-            )}
-            {product.techText2 && (
-              <div className="tech-description">
-                {product.techImg2 && (
-                  <img src={product.techImg2.file.url} className="tech-img" />
-                )}
-                <ReactMarkdown>{product.techText2.techText2}</ReactMarkdown>
-              </div>
-            )}
-            {product.techText3 && (
-              <div className="tech-description">
-                {product.techImg3 && (
-                  <img src={product.techImg3.file.url} className="tech-img" />
-                )}
-                <ReactMarkdown>{product.techText3.techText3}</ReactMarkdown>
-              </div>
-            )}
-            {product.techText4 && (
-              <div className="tech-description">
-                {product.techImg4 && (
-                  <img src={product.techImg4.file.url} className="tech-img" />
-                )}
-                <ReactMarkdown>{product.techText4.techText4}</ReactMarkdown>
-              </div>
-            )}
-            {product.techText5 && (
-              <div className="tech-description">
-                {product.techImg5 && (
-                  <img src={product.techImg5.file.url} className="tech-img" />
-                )}
-                <ReactMarkdown>{product.techText5.techText5}</ReactMarkdown>
-              </div>
-            )}
-            {product.techText6 && (
-              <div className="tech-description">
-                {product.techImg6 && (
-                  <img src={product.techImg6.file.url} className="tech-img" />
-                )}
-                <ReactMarkdown>{product.techText6.techText6}</ReactMarkdown>
-              </div>
-            )}
-            {product.techText7 && (
-              <div className="tech-description">
-                {product.techImg7 && (
-                  <img src={product.techImg7.file.url} className="tech-img" />
-                )}
-                <ReactMarkdown>{product.techText7.techText7}</ReactMarkdown>
-              </div>
-            )}
+            <div
+              className={`${
+                product.categorySlug === "xxio-prime-royal-ladies"
+                  ? "product-page-tech ladies padding"
+                  : product.categorySlug === "xxio-prime"
+                  ? "product-page-tech men padding"
+                  : "product-page padding"
+              }`}
+            >
+              {product.techText1 && (
+                <div className="tech-description">
+                  <h3>Technology</h3>
+                  {product.techImg1 && (
+                    <img
+                      src={product.techImg1.file.url}
+                      className="tech-img"
+                      alt=""
+                    />
+                  )}
+                  <ReactMarkdown>{product.techText1.techText1}</ReactMarkdown>
+                </div>
+              )}
+              {product.techText2 && (
+                <div className="tech-description">
+                  {product.techImg2 && (
+                    <img src={product.techImg2.file.url} className="tech-img" />
+                  )}
+                  <ReactMarkdown>{product.techText2.techText2}</ReactMarkdown>
+                </div>
+              )}
+              {product.techText3 && (
+                <div className="tech-description">
+                  {product.techImg3 && (
+                    <img src={product.techImg3.file.url} className="tech-img" />
+                  )}
+                  <ReactMarkdown>{product.techText3.techText3}</ReactMarkdown>
+                </div>
+              )}
+              {product.techText4 && (
+                <div className="tech-description">
+                  {product.techImg4 && (
+                    <img src={product.techImg4.file.url} className="tech-img" />
+                  )}
+                  <ReactMarkdown>{product.techText4.techText4}</ReactMarkdown>
+                </div>
+              )}
+              {product.techText5 && (
+                <div className="tech-description">
+                  {product.techImg5 && (
+                    <img src={product.techImg5.file.url} className="tech-img" />
+                  )}
+                  <ReactMarkdown>{product.techText5.techText5}</ReactMarkdown>
+                </div>
+              )}
+              {product.techText6 && (
+                <div className="tech-description">
+                  {product.techImg6 && (
+                    <img src={product.techImg6.file.url} className="tech-img" />
+                  )}
+                  <ReactMarkdown>{product.techText6.techText6}</ReactMarkdown>
+                </div>
+              )}
+              {product.techText7 && (
+                <div className="tech-description">
+                  {product.techImg7 && (
+                    <img src={product.techImg7.file.url} className="tech-img" />
+                  )}
+                  <ReactMarkdown>{product.techText7.techText7}</ReactMarkdown>
+                </div>
+              )}
+            </div>
             {product.specs && (
-              <div>
+              <div className="padding">
                 <h3>{`${product.productName} specs`}</h3>
                 <img
                   src={product.specs.file.url}
@@ -173,77 +183,79 @@ const ProductPage = (props) => {
               </div>
             )}
             {product.colors && (
-              <div>
+              <div className="padding">
                 <h4>Available colors</h4>
                 <p>{product.colors}</p>
               </div>
             )}
-            {product.euro && (
-              <>
-                {product.price1title == null ? (
-                  <h3 className="price-title">{`${product.productName} price`}</h3>
-                ) : (
-                  <h3 className="price-title">{`${product.price1title} price`}</h3>
-                )}
+            <div className="padding">
+              {product.euro && (
+                <>
+                  {product.price1title == null ? (
+                    <h3 className="price-title">{`${product.productName} price`}</h3>
+                  ) : (
+                    <h3 className="price-title">{`${product.price1title} price`}</h3>
+                  )}
 
-                <p>
-                  {currencyFormat(product.euro)} &euro;/{" "}
-                  {currencyFormat(product.swiss)} CHF /{" "}
-                  {currencyFormat(product.kroner)} SEK /{" "}
-                  {currencyFormat(product.pound)} &#163;
-                </p>
-              </>
-            )}
-            {product.euro2 && (
-              <>
-                {product.price2title == null ? (
-                  <h3>{` ${product.productName} price`}</h3>
-                ) : (
-                  <h3>{`${product.price2title} price`}</h3>
-                )}
+                  <p>
+                    {currencyFormat(product.euro)} &euro;/{" "}
+                    {currencyFormat(product.swiss)} CHF /{" "}
+                    {currencyFormat(product.kroner)} SEK /{" "}
+                    {currencyFormat(product.pound)} &#163;
+                  </p>
+                </>
+              )}
+              {product.euro2 && (
+                <>
+                  {product.price2title == null ? (
+                    <h3>{` ${product.productName} price`}</h3>
+                  ) : (
+                    <h3>{`${product.price2title} price`}</h3>
+                  )}
 
-                <p>
-                  {currencyFormat(product.euro2)} &euro;/{" "}
-                  {currencyFormat(product.swiss2)} CHF /{" "}
-                  {currencyFormat(product.kroner2)} SEK /{" "}
-                  {currencyFormat(product.pound2)} &#163;
-                </p>
-              </>
-            )}
-            {product.euro3 && (
-              <>
-                {product.price3title == null ? (
-                  <h3>{` ${product.productName} price`}</h3>
-                ) : (
-                  <h3>{` ${product.price3title} price`}</h3>
-                )}
+                  <p>
+                    {currencyFormat(product.euro2)} &euro;/{" "}
+                    {currencyFormat(product.swiss2)} CHF /{" "}
+                    {currencyFormat(product.kroner2)} SEK /{" "}
+                    {currencyFormat(product.pound2)} &#163;
+                  </p>
+                </>
+              )}
+              {product.euro3 && (
+                <>
+                  {product.price3title == null ? (
+                    <h3>{` ${product.productName} price`}</h3>
+                  ) : (
+                    <h3>{` ${product.price3title} price`}</h3>
+                  )}
 
-                <p>
-                  {currencyFormat(product.euro3)} &euro;/{" "}
-                  {currencyFormat(product.swiss3)} CHF /{" "}
-                  {currencyFormat(product.kroner3)} SEK /{" "}
-                  {currencyFormat(product.pound3)} &#163;
-                </p>
-              </>
-            )}
-            {product.euro4 && (
-              <>
-                {product.price4title == null ? (
-                  <h3>{` ${product.productName} price`}</h3>
-                ) : (
-                  <h3>{` ${product.price4title} price`}</h3>
-                )}
+                  <p>
+                    {currencyFormat(product.euro3)} &euro;/{" "}
+                    {currencyFormat(product.swiss3)} CHF /{" "}
+                    {currencyFormat(product.kroner3)} SEK /{" "}
+                    {currencyFormat(product.pound3)} &#163;
+                  </p>
+                </>
+              )}
+              {product.euro4 && (
+                <>
+                  {product.price4title == null ? (
+                    <h3>{` ${product.productName} price`}</h3>
+                  ) : (
+                    <h3>{` ${product.price4title} price`}</h3>
+                  )}
 
-                <p>
-                  {currencyFormat(product.euro4)} &euro;/{" "}
-                  {currencyFormat(product.swiss4)} CHF /{" "}
-                  {currencyFormat(product.kroner4)} SEK /{" "}
-                  {currencyFormat(product.pound4)} &#163;
-                </p>
-              </>
-            )}
+                  <p>
+                    {currencyFormat(product.euro4)} &euro;/{" "}
+                    {currencyFormat(product.swiss4)} CHF /{" "}
+                    {currencyFormat(product.kroner4)} SEK /{" "}
+                    {currencyFormat(product.pound4)} &#163;
+                  </p>
+                </>
+              )}
+            </div>
             {product.availableWhen && (
-              <p>In store in {product.availableWhen}</p>
+              <p className="padding">In store in {product.availableWhen}</p>
             )}
           </div>
         </>
@@ -266,7 +278,7 @@ const ProductPage = (props) => {
       </div>
       <div className="menu-placeholder" />
 
-      <div className="padding">{productInfo}</div>
+      <div>{productInfo}</div>
     </>
   );
 };

@@ -7,6 +7,25 @@
   text-align: center;
 }
 
+.product-page-tech {
+  background-color: #000;
+  color: #fff;
+}
+
+.product-page-tech .tech-img {
+  width: 80%;
+}
+
+.men h3,
+.men h5 {
+  color: #c9b97d;
+}
+
+.ladies h3,
+.ladies h5 {
+  color: #ab93a8;
+}
+
 .tech-description {
   display: flex;
   flex-direction: column;
