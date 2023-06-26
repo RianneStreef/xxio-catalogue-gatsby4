@@ -33,27 +33,27 @@ const DemoDayPage = () => {
       <div className="demo-day-links padding-sides">
         <p className="demo-title">
           To find a Demo Day near you, <br />
-          follow one of the following links:
+          follow the following link:
         </p>
         <hr className="separator" />
 
         <div className="flag-container">
           <a
             className="demo-link"
-            href="https://www.xxio.eu/event-days.html"
+            href="https://eu.dunlopsports.com/xxio/events-xo.html"
             target="blank"
           >
             <img className="flag-link" src={EUFlag} alt="european flag" />
             <p>EU Events website</p>
           </a>
-          <a
+          {/* <a
             className="demo-link"
             href="https://www.xxiouk.com/en/event-days.html"
             target="blank"
           >
             <img className="flag-link" src={UKFlag} alt="united kingdom flag" />
             <p>UK Events website</p>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="padding-sides">
