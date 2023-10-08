@@ -4,6 +4,7 @@ import home from "../images/home.png";
 import back from "../images/back.png";
 
 import Layout from "../components/Layout";
+import Consent from "../components/Consent";
 import { Helmet } from "react-helmet";
 
 import "../styles/categories.css";
@@ -93,6 +94,7 @@ const SubCategoryPage = (props) => {
         <title>XXIO EU & UK Catalogue</title>
         <meta name="robots" content="nofollow" />
       </Helmet>
+      <Consent />
       <div className="category-title">
         <Link to="/soft-goods" className="nav-link">
           <img src={back} className="nav-icon-back" />

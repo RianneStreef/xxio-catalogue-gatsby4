@@ -1,0 +1,15 @@
+.CookieConsent {
+  background-color: #fff !important;
+  text-align: left !important;
+}
+
+.cookie-text {
+  font-size: 15px;
+  margin: 0 5px;
+}
+
+#rcc-confirm-button {
+  background-color: #000 !important;
+  font-family: Arial, Helvetica, sans-serif, sans-serif !important;
+  color: #fff !important;
+}

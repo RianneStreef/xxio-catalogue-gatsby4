@@ -6,6 +6,7 @@ import home from "../images/home.png";
 import back from "../images/back.png";
 
 import Layout from "../components/Layout";
+import Consent from "../components/Consent";
 
 import "../styles/categories.css";
 
@@ -130,6 +131,7 @@ const CategoryPage = (props) => {
         <title>XXIO Golf EU & UK Catalogue</title>
         <meta name="robots" content="nofollow" />
       </Helmet>
+      <Consent />
       <div className="category-title">
         <Link to="/categories" className="nav-link">
           <img src={back} className="nav-icon-back" />

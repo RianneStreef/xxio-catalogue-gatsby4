@@ -5,6 +5,7 @@ import headerDemoDay from "../images/header-demoday_2022.jpg";
 import download from "../images/icon-download-v2.png";
 
 import Layout from "../components/Layout";
+import Consent from "../components/Consent";
 import { Helmet } from "react-helmet";
 
 import logo from "../images/logo.svg";
@@ -80,6 +81,7 @@ const CategoriesPage = (props) => {
           <title>XXIO EU & UK Catalogue</title>
           <meta name="robots" content="nofollow" />
         </Helmet>
+        <Consent />
         <div className="logo-container">
           <img src={logo} className="logo" alt="Logo" />
         </div>

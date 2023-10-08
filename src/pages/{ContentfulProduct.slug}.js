@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
+import Consent from "../components/Consent";
 
 import { Slide } from "react-slideshow-image";
 
@@ -59,6 +60,7 @@ const ProductPage = (props) => {
 
       return (
         <>
+          <Consent />
           <div key={product.id}>
             <div className="slide-container">
               {slideImages.length > 1 ? (
