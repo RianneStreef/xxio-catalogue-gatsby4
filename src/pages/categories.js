@@ -101,6 +101,18 @@ const CategoriesPage = (props) => {
           </Link>
         </div>
       </div>
+      <div
+        style={{ textAlign: "center", color: "#808080", fontSize: "0.8rem" }}
+      >
+        <a
+          href="https://srixonconnect.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#808080", textDecoration: "underline" }}
+        >
+          BtoB Srixon Connect
+        </a>
+      </div>
       <div className="download">
         <p className="save-message" id="save-message">
           <i>Don't forget to save the XXIO EU Catalogue on your home screen</i>
