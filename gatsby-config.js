@@ -8,7 +8,6 @@ module.exports = {
     title: "xxio-catalogue",
   },
   plugins: [
-  
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -35,12 +34,7 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: ["/"],
-      },
-    },
+
     {
       resolve: "gatsby-source-contentful",
       // not deploying by webhook - still
