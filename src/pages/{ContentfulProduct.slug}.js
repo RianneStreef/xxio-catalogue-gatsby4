@@ -108,8 +108,8 @@ const ProductPage = (props) => {
                 product.categorySlug === "xxio-prime-royal-ladies"
                   ? "product-page-tech ladies padding"
                   : product.categorySlug === "xxio-prime"
-                  ? "product-page-tech men padding"
-                  : "product-page padding"
+                    ? "product-page-tech men padding"
+                    : "product-page padding"
               }`}
             >
               {product.techText1 && (
@@ -256,7 +256,7 @@ const ProductPage = (props) => {
                 </>
               )}
             </div>
-            {!product.euro && (
+            {!product.euro && product.availableWhen && (
               <p className="padding">In store in {product.availableWhen}</p>
             )}
           </div>
